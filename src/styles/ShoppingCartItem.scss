@@ -1,0 +1,27 @@
+@use 'vars';
+@use "ItemDetail";
+
+// .shopping-cart1 {
+//     display: grid;
+//     grid-template-columns: auto 1fr auto auto;
+//     gap: 16px;
+//     margin-bottom: 24px;
+//     align-items: center;
+//     background-color: bisque;
+//   }
+//   .shopping-cart1 figure {
+//     margin: 0;
+//   }
+//   .shopping-cart1 figure img {
+//     width: 70px;
+//     height: 70px;
+//     border-radius: 20px;
+//     object-fit: cover;
+//   }
+//   .shopping-cart1 p:nth-child(2) {
+//     color: var(--very-light-pink);
+//   }
+//   .shopping-cart1 p:nth-child(3) {
+//     font-size: var(--md);
+//     font-weight: bold;
+//   }

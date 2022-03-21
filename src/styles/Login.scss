@@ -11,12 +11,16 @@
   grid-template-rows: auto 1fr auto;
   width: 300px;
 }
-.logo {
-  width: 150px;
-  margin-bottom: 48px;
-  justify-self: center;
-  display: none;
+
+.form-container .logo {
+  margin-bottom: 19px;
 }
+// .logo {
+//   width: 150px;
+//   margin-bottom: 48px;
+//   justify-self: center;
+//   display: none;
+// }
 .form {
   display: flex;
   flex-direction: column;

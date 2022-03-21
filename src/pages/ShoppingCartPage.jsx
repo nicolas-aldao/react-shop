@@ -6,7 +6,8 @@ const ShoppingCartPage = () => {
     return (
         <React.Fragment>
             <Products></Products>
-            <ShoppingCart></ShoppingCart>
+            <ShoppingCart>
+            </ShoppingCart>
         </React.Fragment>
     );
 }
