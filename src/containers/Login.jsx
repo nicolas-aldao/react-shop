@@ -1,7 +1,11 @@
 import React, { useRef } from "react";
-import "../styles/Login.scss";
+//assets
 import logo from "@logos/logo_yard_sale.svg";
+//styles
+import "../styles/Login.scss";
 import "@styles/Assets.scss";
+//components
+import PrimaryButton from "../components/primary-button/PrimaryButton";
 
 const Login = () => {
   const form = useRef(null);
@@ -39,13 +43,8 @@ const Login = () => {
             placeholder="*********"
             className="input input-password"
           />
-
-          <button
-            type="submit"
-            className="primary-button login-button"
-            onClick={handleSubmit}>
-            Log in
-          </button>
+          <PrimaryButton title={"Log in"} classesAdded={"login-button"}
+          type="submit" onClick={handleSubmit}></PrimaryButton>
           <a href="/">Forgot my password</a>
         </form>
 

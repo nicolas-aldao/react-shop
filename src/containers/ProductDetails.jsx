@@ -1,7 +1,11 @@
 import React from "react";
 import "../styles/ProductDetails.scss";
+//assets
 import closeLogo from '@icons/icon_close.png';
 import addToCart from '@icons/bt_add_to_cart.svg';
+//components
+import PrimaryButton from "../components/primary-button/PrimaryButton";
+
 
 const ProductDetails = () => {
   return (
@@ -20,10 +24,9 @@ const ProductDetails = () => {
           With its practical position, this bike also fulfills a decorative
           function, add your hall or workspace.
         </p>
-        <button className="primary-button add-to-cart-button">
+        <PrimaryButton title={"Add to cart"} classesAdded={"add-to-cart-button"}>
           <img src={addToCart} alt="add to cart" />
-          Add to cart
-        </button>
+        </PrimaryButton>
       </div>
     </section>
   );

@@ -1,9 +1,13 @@
 import React, { useContext } from "react";
-import ShoppingCartItem from '../components/ShoppingCartItem';
+import AppContext from "../context/AppContext";
+//asets
 import arrow from "@icons/flechita.svg";
 import close from "@icons/icon_close.png";
+//styles
 import "../styles/ShoppingCart.scss";
-import AppContext from "../context/AppContext";
+//components
+import ShoppingCartItem from '../components/ShoppingCartItem';
+import PrimaryButton from "../components/primary-button/PrimaryButton";
 
 const ShoppingCart = () => {
   const {state} = useContext(AppContext);
@@ -42,8 +46,7 @@ const ShoppingCart = () => {
           </p>
           <p>${sumTotal()}</p>
         </div>
-
-        <button className="primary-button">Checkout</button>
+        <PrimaryButton title={"Checkout"} classesAdded=""></PrimaryButton>
       </div>
     </aside>
   );
